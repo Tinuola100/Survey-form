@@ -5,29 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="heading">
         <h1 id="heading1">CapacityBay Survey Form</h1>
-        <h3 id="heading2">Thank you for taking the time in helping us improve the platform</h3>
+      <em><h3 id="heading2">Thank you for taking the time in helping us improve the platform</h3></em> 
     </div>
     <form>
         <div id="content1">
             <label for="Name">Name</label><br><br> 
-            <input type="text" name="Name" placeholder="Enter your name"><br><br>
+            <input type="text" name="Name" placeholder="Enter your name" class="box"><br><br>
 
             <label for="Email">Email</label><br><br>
-            <input type="email" name="Email" placeholder="Enter your Email"><br><br>
+            <input type="email" name="Email" placeholder="Enter your Email" class="box"><br><br>
 
             
             <label for="Age(optional)">Age(optional)</label><br><br>
-            <input type="number" name="Age" placeholder="Age"><br><br>
+            <input type="number" name="Age" placeholder="Age" class="box"><br><br>
 
-            
+            <label for="Question1">Which option best describes your current role?</label><br><br>
+                 <select name="" class="box">
+                  <option value="">Select current role</option>
+                  <option value="">Student</option>
+                  <option value="">Full Time Job</option>
+                  <option value="">Full Time Learner</option>
+                  <option value="">Prefer not to say</option>
+                 <option value="">Other</option><br><br>
+                 </select><br><br>
 
 
+                 <label for="Question2">Would you recommend CapacityBay to a friend?</label><br><br>
+                 <input type="radio" name="Definitely" value="choice-1" required>
+ 
+                 <label for="">Definitely</label><br><br> 
 
-        </div>
+
+                 <input type="radio"  name="Maybe" value="choice-2" required>
+                 <label for="">Maybe</label><br><br>
+
+                 <input type="radio"  name="Not sure" value="choice-3" required>
+                 <label for="">Not sure</label> <br><br>
+ 
+
+<label for="Question3">What is your favourite feature of capacityBay?</label><br><br>
+                 <select name="" class="box">
+                  <option value="">Select an option</option>
+                  <option value="">Challenges</option>
+                  <option value="">Projects</option>
+                  <option value="">Community</option>
+                 <option value="">Open source</option><br><br>
+                 </select><br><br>
+
+    
+
+        
+            <label for="Question4">What would you like to see improved?  (check all that apply)</label><br><br>
+            <input type="checkbox" ><Label for="">Front-end Projects</Label><br><br>
+            <input type="checkbox" name="Back-end Projects"><Label for="">Back-end Projects</Label><br><br>
+            <input type="checkbox" name="Data Visualization"><Label for="">Data Visualization</Label><br><br>
+            <input type="checkbox" ><Label for="">Challenges</Label><br><br>
+            <input type="checkbox" ><Label for="">Open source community</Label><br><br>
+            <input type="checkbox" ><Label for="">Gitter help rooms</Label><br><br>
+            <input type="checkbox" ><Label for="">Videos</Label><br><br>
+            <input type="checkbox" ><Label for="">City Meetups</Label><br><br>
+            <input type="checkbox" ><Label for="">Wiki</Label><br><br>
+            <input type="checkbox" ><Label for="">Forum</Label><br><br>
+            <input type="checkbox" ><Label for="">Additional courses</Label><br><br>
+           
+
+            <label for="Any comments or suggestions"> Any comments or suggestions?</label><br><br>
+            <textarea id="Any comments and suggestions" placeholder="Enter your comment here..."  rows="10" cols="65"></textarea><br><br>
+           
+            <button type="submit">Submit </button>
+           </div>
     </form>
 </body>
 </html>

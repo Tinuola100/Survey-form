@@ -1,1 +1,54 @@
-style.css
+body{
+background-image: url(./tribute-page-main-image.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgb(141, 129, 189);
+background-blend-mode: overlay,normal;
+color: white}
+
+.heading{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+color: rgb(42, 6, 49);}
+
+#heading1{}
+
+#heading2{
+    margin-top: 10px;}
+
+#content1{
+        width: 90%;
+        margin: auto;}
+form{
+   background-color: rgb(162, 36, 201); 
+   padding-top: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 45%;
+   border-radius: 2px;
+   margin: auto;
+   margin-top: 10px;
+   padding-bottom: 50px;}
+
+form .box{
+    width: 95%;
+    height: 0.8cm;
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(235, 42, 177);
+    color: white;
+    position: relative; 
+    top: 40px;
+    height: 1cm;
+    width: 95%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+
